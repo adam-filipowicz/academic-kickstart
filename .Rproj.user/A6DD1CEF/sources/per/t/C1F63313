@@ -1,22 +1,22 @@
 {
     "collab_server" : "",
     "contents" : "",
-    "created" : 1588967210865.000,
+    "created" : 1588971706598.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "624491066",
-    "id" : "DAD84EA",
+    "hash" : "2375610880",
+    "id" : "C1F63313",
     "lastKnownWriteTime" : 1588966256,
     "last_content_update" : 1588966256,
-    "path" : "~/GitHub/My_Website/content/home/tags.md",
-    "project_path" : "content/home/tags.md",
+    "path" : "~/GitHub/academic-kickstart/content/home/about.md",
+    "project_path" : "content/home/about.md",
     "properties" : {
     },
     "read_only" : false,
     "read_only_alternatives" : [
     ],
-    "relative_order" : 6,
+    "relative_order" : 5,
     "source_on_save" : false,
     "source_window" : "",
     "type" : "markdown"

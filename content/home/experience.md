@@ -5,7 +5,7 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 40  # Order that this section will appear.
 
-title = "Education"
+title = "Experience"
 subtitle = ""
 
 # Date format for experience
@@ -18,27 +18,21 @@ date_format = "Jan 2006"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
-  title = "CEO"
-  company = "GenCoin"
+  title = "Graduate Student"
+  company = "Aballay Lab, OHSU"
   company_url = ""
-  location = "California"
-  date_start = "2017-01-01"
+  location = "Oregon"
+  date_start = "2018-04-01"
   date_end = ""
-  description = """
-  Responsibilities include:
-  
-  * Analysing
-  * Modelling
-  * Deploying
-  """
+  description = """Using behavioral genetics to study mechanisms underlying immune responses to microbial pathogens."""
 
 [[experience]]
-  title = "Professor"
-  company = "University X"
-  company_url = ""
-  location = "California"
-  date_start = "2016-01-01"
-  date_end = "2016-12-31"
-  description = """Taught electronic engineering and researched semiconductor physics."""
+  title = "Research Assistant"
+  company = "Kim Lab, Eastern Virginia Medical School"
+  company_url = "https://www.evms.edu/directory/profiles/woong-ki-kim.php"
+  location = "Virginia"
+  date_start = "2014-08-01"
+  date_end = "2017-06-01"
+  description = """Conducted research into AIDS neuropathogenesis using Rhesus macaque SIV model."""
 
 +++
