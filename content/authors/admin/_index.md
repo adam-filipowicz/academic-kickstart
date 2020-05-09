@@ -68,6 +68,6 @@ user_groups:
 - Visitors
 ---
 
-Hello! I am a graduate student in the Neuroscience Graduate Program at OHSU. My research interests include behavioral genetics, neuroimmune interactions, the use of models in biology. I am currently a member of the Aballay Lab, where we use the simple model organism *Caenorhabditis elegans* to study mechanisms involved in the control of immune responses against microbial pathogens. My current project focuses on the nematode response to *Enterococcus faecalis*, a gram-positive bacterium and an opportunistic pathogen in humans.
+Hello! I am a graduate student in the Neuroscience Graduate Program at OHSU. My research interests include behavioral genetics, neuroimmune interactions, and the use of models in biology. I am currently a member of the Aballay Lab, where we use the simple model organism *Caenorhabditis elegans* to study mechanisms involved in the control of immune responses against microbial pathogens. My current project focuses on the nematode response to *Enterococcus faecalis*, a gram-positive bacterium and an opportunistic pathogen in humans.
 
-While on break from working at the bench due to COVID-19, I am expanding my data science programming skills via two remote courses offered through the computer science department at OHSU.
+While on break from working at the lab bench due to COVID-19, I am expanding my data science and programming skills via two remote courses offered through the computer science department at OHSU: [Data Science Programming](https://lxkain.github.io/CV/) and [Principles & Practice of Data Visualization](https://cslu.ohsu.edu/~bedricks/courses/cs631_spring_2020/)
