@@ -35,4 +35,12 @@ date_format = "Jan 2006"
   date_end = "2017-06-01"
   description = """Conducted research into AIDS neuropathogenesis using Rhesus macaque SIV model."""
 
+[[experience]]
+  title = "Undergraduate Research Assistant"
+  company = "London Lab, University of Chicago"
+  company_url = "http://home.uchicago.edu/~london/"
+  location = "Illinois"
+  date_start = "2012-04-01"
+  date_end = "2013-04-01"
+  description = """Focused on social behavior of zebra finches in relation to developmental neurobiology and neurogenomics."""
 +++

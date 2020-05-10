@@ -54,20 +54,20 @@ social:
   link: https://github.com/adam-filipowicz/
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
-# - icon: cv
-#   icon_pack: ai
-#   link: files/cv.pdf
+- icon: cv
+  icon_pack: ai
+  link: files/CV.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""
 
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
-user_groups:
-- Researchers
-- Visitors
+#user_groups:
+#- Researchers
+#- Visitors
 ---
 
-Hello! I am a graduate student in the Neuroscience Graduate Program at OHSU. My research interests include behavioral genetics, neuroimmune interactions, and the use of models in biology. I am currently a member of the Aballay Lab, where we use the simple model organism *Caenorhabditis elegans* to study mechanisms involved in the control of immune responses against microbial pathogens. My current project focuses on the nematode response to *Enterococcus faecalis*, a gram-positive bacterium and an opportunistic pathogen in humans.
+Hello! I am a graduate student in the Neuroscience Graduate Program at OHSU. My research interests include behavioral genetics, neuroimmune interactions, and the use of models in biology. I am currently a member of the Aballay Lab, where we use the simple model organism *Caenorhabditis elegans* to study mechanisms involved in the control of immune responses against microbial pathogens. My current project focuses on the nematode response to *Enterococcus faecalis*, a gram-positive bacterium and an opportunistic human pathogen. I have prior experience in using a rhesus macaque model of HIV infection to study HIV's effects on the brain.
 
-While on break from working at the lab bench due to COVID-19, I am expanding my data science and programming skills via two remote courses offered through the computer science department at OHSU: [Data Science Programming](https://lxkain.github.io/CV/) and [Principles & Practice of Data Visualization](https://cslu.ohsu.edu/~bedricks/courses/cs631_spring_2020/)
+While on break from lab work due to COVID-19, I am expanding my data science and programming skills via two remote courses offered through the computer science department at OHSU: [Data Science Programming](https://lxkain.github.io/CV/) and [Principles & Practice of Data Visualization.](https://cslu.ohsu.edu/~bedricks/courses/cs631_spring_2020/) Head to the [Projects](#projects) section to see some of the work I've done for these courses.
