@@ -1,0 +1,25 @@
+"0","hdm_females <- read_csv(here::here(""hot_dog_contest_with_affiliation.csv""), "
+"0","    col_types = cols("
+"0","      affiliated = col_factor(levels = NULL), "
+"0","      gender = col_factor(levels = NULL)"
+"0","      )) %>% "
+"0","  mutate(post_ifoce = year >= 1997) %>% "
+"0","  filter(year >= 1981 & gender == ""female"") "
+"0","glimpse(hdm_females)"
+"1","Rows: 7"
+"1",""
+"1","
+"
+"1","Columns: 6"
+"1",""
+"1","
+"
+"1","$ year       [3m[38;5;246m<dbl>[39m[23m 2017, 2016, 2015, 2014, 2013, 2012, 2011
+$ gender     [3m[38;5;246m<fct>[39m[23m female, female, female, female, female, female, female
+$ name       [3m[38;5;246m<chr>[39m[23m ""Miki Sudo"", ""Miki Sudo"", ""Miki Sudo"", ""Miki Sudo"", ""Sonya Thomas"", ""Sonya Thomas"", ""Sonya Thomas""
+$ num_eaten  [3m[38;5;246m<dbl>[39m[23m 41.00, 38.00, 38.00, 34.00, 36.75, 45.00, 40.00
+$ affiliated [3m[38;5;246m<fct>[39m[23m current, current, current, current, current, current, current
+$ post_ifoce [3m[38;5;246m<lgl>[39m[23m TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE"
+"1",""
+"1","
+"

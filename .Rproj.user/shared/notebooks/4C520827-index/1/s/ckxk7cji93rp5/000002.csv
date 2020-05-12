@@ -1,0 +1,24 @@
+"0","hdm.affil <- read_csv(here::here(""hot_dog_contest_with_affiliation.csv""),"
+"0","                      col_types = cols("
+"0","                        affiliated = col_factor(levels = NULL),"
+"0","                        gender = col_factor(levels = NULL))) %>% "
+"0","  mutate(post_ifoce = year >= 1997) %>% "
+"0","  filter(year >= 1981 & gender == ""male"")"
+"0","glimpse(hdm.affil)"
+"1","Rows: 37"
+"1",""
+"1","
+"
+"1","Columns: 6"
+"1",""
+"1","
+"
+"1","$ year       [3m[38;5;246m<dbl>[39m[23m 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 200...
+$ gender     [3m[38;5;246m<fct>[39m[23m male, male, male, male, male, male, male, male, male, male, male, male, male, male, male, male, mal...
+$ name       [3m[38;5;246m<chr>[39m[23m ""Joey Chestnut"", ""Joey Chestnut"", ""Matthew Stonie"", ""Joey Chestnut"", ""Joey Chestnut"", ""Joey Chestnu...
+$ num_eaten  [3m[38;5;246m<dbl>[39m[23m 72.000, 70.000, 62.000, 61.000, 69.000, 68.000, 62.000, 54.000, 68.000, 59.000, 66.000, 53.750, 49....
+$ affiliated [3m[38;5;246m<fct>[39m[23m current, current, current, current, current, current, current, current, current, current, current, ...
+$ post_ifoce [3m[38;5;246m<lgl>[39m[23m TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRU..."
+"1",""
+"1","
+"

@@ -1,0 +1,163 @@
+---
+title: Tidying Data
+author: Adam Filipowicz
+date: '2020-04-22'
+slug: tidying-data
+categories: []
+tags:
+  - Data Visualization
+summary: 'In this lab we explore what it means to tidy data, and then manipulate and visualize some interesting things from the gapminder data package.'
+authors: []
+external_link: ''
+image:
+  placement: 1
+  caption: ''
+  focal_point: 'Smart'
+  preview_only: no
+url_code: ''
+url_pdf: ''
+url_slides: ''
+url_video: ''
+slides: ''
+---
+
+```{r, echo=FALSE}
+library(tidyverse)
+library(readxl)
+library(gapminder)
+```
+
+
+# Lab 4 Deliverable
+
+## Part 1: Tidying
+
+We'll start by reading in the excel data file and cleaning up the column names.
+
+```{r}
+broadband <- readxl::read_excel("gapminder_broadband_per_100.xlsx")
+janitor::clean_names(broadband)
+```
+
+Next, let's get tidy our data. We'll rename the "Fixed broadband Internet subscribers (per 100 people)" column to "country", get the data into three columns: country, year, and fixed broadband internet subscribers (per 100 people), and then arrange by the country column.
+
+```{r}
+broadband_tidy <- broadband %>%
+  rename(country = `Fixed broadband Internet subscribers (per 100 people)`) %>% 
+  gather(year, `Fixed broadband Internet subscribers (per 100 people)`, -country, na.rm = TRUE) %>% 
+  arrange(country)
+broadband_tidy
+```
+
+The data looks tidy now! Let's take a quick look at it:
+
+```{r}
+glimpse(broadband_tidy)
+```
+
+And skimming it:
+
+```{r}
+library(skimr)
+skim(broadband_tidy) %>% 
+  summary()
+```
+
+To confirm that its tidy, let's see what useful information we can pull out pretty easily now. First, let's pull out the number of Internet subscribers for a specific country by year.
+
+```{r}
+broadband_tidy %>% 
+  count(country, year, wt = `Fixed broadband Internet subscribers (per 100 people)`) %>% 
+  filter(country == "United States")
+```
+
+Next, let's see how many countries there are total in our list.
+
+```{r}
+broadband_tidy %>% 
+  distinct(country) %>% 
+  tally()
+```
+
+Finally, let's see how many Internet subscribers there were total for each year, across all countries, and plot this.
+
+```{r}
+total_subscribers <- broadband_tidy %>% 
+  count(year, wt = `Fixed broadband Internet subscribers (per 100 people)`)
+ggplot(total_subscribers, aes(year, n)) +
+  geom_point() +
+  labs(x = "Year", y = "Fixed broadband Internet \nsubscribers (per 100 people)") +
+  theme_bw()
+```
+
+## Part 2: Gapminder
+
+Recall the Task Menu:
+
+* Get the maximum and minimum of GDP per capita for all continents.
+
+* Look at the spread of GDP per capita across countries within the continents.
+
+* How does life expectancy vary across different continents?
+
+* Report the absolute and/or relative abundance of countries with low life expectancy over time by continent: Compute some measure of worldwide life expectancy - you decide - a mean or median or some other quantile or perhaps your current age. Then determine how many countries on each continent have a life expectancy less than this benchmark, for each year.
+
+* Make up your own! 
+
+### Maximum and minimum GDP per capita for all continents
+
+Alright, let's take a look at this data.
+
+```{r}
+glimpse(gapminder)
+```
+
+Six columns here: country, continent, year, lifeExp, pop, and gdpPercap. For this first task, we just want to group by continent and get the minimum and maximum of that last column, gdpPercap for each.
+
+#### Table
+
+```{r}
+gapminder %>%
+  group_by(continent) %>% 
+  summarise(min(gdpPercap), max(gdpPercap))
+```
+
+#### Companion Graph
+
+```{r}
+ggplot(gapminder, aes(x = continent, y = gdpPercap)) +
+  stat_summary(fun = "max", geom = "point") +
+  stat_summary(fun = "min", geom = "point", shape = 21) +
+  labs(x = "", y = "GDP Per Capita")
+```
+
+#### Description/Writeup
+
+Using dplyr, it is very easy to manipulate the data to get what we want for this task, in a fairly readable format. Just two functions were used: group_by to get the data focused on continents, and then summarise to get the statistical information we wanted, minimum and maximum, out. As for the companion graph, I elected to keep it simple and show exactly what is in the table using two different dots for each continent. An open circle shows the minimum and a solid black dot shows the maximum. For this task, a graph is not really needed, as it is pretty easy to just glance at the table and see all of the relevant information.
+
+### Life expectancy vs. GDP per capita in 2007
+
+For this task, we'll be looking at the relationship between life expectancy and GDP per capita for the most recent year available in the gapminder dataset.
+
+#### Table
+
+```{r}
+gapminder_recent <- gapminder %>% 
+  filter(year == 2007) %>% 
+  select(country, continent, lifeExp, gdpPercap)
+gapminder_recent %>% 
+  arrange(lifeExp)
+```
+
+#### Companion Graph
+
+```{r}
+ggplot(gapminder_recent, aes(x = lifeExp, y = gdpPercap, color = continent)) +
+  geom_point() +
+  scale_color_brewer(palette = "Dark2")
+```
+
+#### Description/Writeup
+
+For the table, I elected to filter the data so it just included the most recent year available, 2007, and then select just the relevant columns: country, continent, lifeExp, and gdpPercap. The table was then sorted by lifeExp ascending. The table contains 142 rows, and so is rather large and cumbersome to get through. The graph, on the other hand, provides a quick snapshot of the relationship between lifeExp and gdpPercap. With the graph, we lose information about individual countries as they are not labeled, but gain continent-level information by using different colors for each continent.
+

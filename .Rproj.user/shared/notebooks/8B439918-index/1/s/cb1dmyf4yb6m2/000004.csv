@@ -1,0 +1,11 @@
+"0","my_sound_traj <- sound_traj +"
+"0","  scale_color_manual(values = beyonce_palette(18)[c(1, 4, 5)])"
+"0","cvd_grid(my_sound_traj)"
+"2","`geom_smooth()` using method = 'loess' and formula 'y ~ x'
+"
+"2","`geom_smooth()` using method = 'loess' and formula 'y ~ x'
+"
+"2","`geom_smooth()` using method = 'loess' and formula 'y ~ x'
+"
+"2","`geom_smooth()` using method = 'loess' and formula 'y ~ x'
+"

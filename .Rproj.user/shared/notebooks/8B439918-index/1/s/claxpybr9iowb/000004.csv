@@ -1,0 +1,4 @@
+"0","sounds %>% "
+"0","  group_by(sound) %>% "
+"0","  summarize(total_produce = sum(kids_produce)) %>% "
+"0","  knitr::kable()"

@@ -86,7 +86,7 @@ phone = ""
 
 # Address
 # For country_code, use the 2-letter ISO code (see https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2 )
-address = {street = "Lab Address: 3222 SW Research Drive", city = "Portland", region = "OR", postcode = "97239", country = "United States", country_code = "US"}
+address = {street = "Lab Address: Room 6351, 3222 SW Research Drive", city = "Portland", region = "OR", postcode = "97239", country = "United States", country_code = "US"}
 
 # Geographic coordinates
 # To get your coordinates, right-click on Google Maps and choose "What's here?". The coords will show up at the bottom.

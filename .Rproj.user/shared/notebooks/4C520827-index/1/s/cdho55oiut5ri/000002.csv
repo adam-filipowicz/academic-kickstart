@@ -1,0 +1,4 @@
+"0","hot.dogs <- read_csv(here::here(""hot_dog_contest.csv""),"
+"0","                     col_types = cols("
+"0","                       gender = col_factor(levels = NULL)"
+"0","                     ))"

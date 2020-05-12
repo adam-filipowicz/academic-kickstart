@@ -1,0 +1,7 @@
+"0","ggplot(sounds, aes(x = age, y = prop_produce, fill = fct_reorder2(sound, age, prop_produce))) +"
+"0","  geom_smooth(aes(color = fct_reorder2(sound, age, prop_produce)), se = FALSE, lwd = .5, show.legend = FALSE) +"
+"0","  geom_point(size = 2, shape = 21, color = ""midnightblue"") +"
+"0","  labs(x = ""Age (months)"", y = ""Proportion of Children Producing"", fill = ""sound"") +"
+"0","  scale_fill_viridis(discrete = TRUE) +"
+"0","  scale_color_viridis(discrete = TRUE) +"
+"0","  theme_bw()"

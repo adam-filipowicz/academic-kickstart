@@ -1,0 +1,8 @@
+"0","devtools::install_github(""UrbanInstitute/urbnmapr"")"
+"2","WARNING: Rtools is required to build R packages, but no version of Rtools compatible with R 3.6.3 was found. (Only the following incompatible version(s) of Rtools were found:4.0)
+
+Please download and install Rtools custom from https://cran.r-project.org/bin/windows/Rtools/.
+"
+"2","Skipping install of 'urbnmapr' from a github remote, the SHA1 (ef9f4488) has not changed since last install.
+  Use `force = TRUE` to force installation
+"

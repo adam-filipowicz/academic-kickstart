@@ -1,0 +1,6 @@
+"0","ggplot(moma, aes(year_acquired, year_acquired-year_created)) + "
+"0","  geom_point(alpha = .1, na.rm = TRUE) +"
+"0","  geom_smooth(se=FALSE, color = ""#EE442F"") +"
+"0","  theme_tufte() +"
+"0","  labs(x = ""Year Acquired"", y = ""Age (years) at time of acquisition"") +"
+"0","  ggtitle(""MoMA Keeps Things Fresh"")"

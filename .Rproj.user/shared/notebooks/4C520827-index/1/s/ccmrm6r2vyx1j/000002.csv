@@ -1,0 +1,2 @@
+"0","ggplot(hot.dogs, aes(x = year, y = num_eaten)) +"
+"0","  geom_col()"

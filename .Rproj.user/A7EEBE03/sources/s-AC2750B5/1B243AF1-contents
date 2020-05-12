@@ -1,0 +1,107 @@
+---
+title: Donut Chart Brief
+author: Adam Filipowicz
+date: '2020-04-29'
+slug: donut-chart-brief
+categories: []
+tags: ["Data Visualization"]
+summary: 'A brief overview of best practices for donut charts, including an example using data of prison/jail custody deaths in Texas.'
+authors: [Adam Filipowicz]
+external_link: ''
+image: 
+  placement: 1
+  caption: ''
+  focal_point: 'Smart'
+  preview_only: no
+url_code: ''
+url_pdf: ''
+url_slides: ''
+url_video: ''
+slides: ''
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Donut Chart
+
+## Example
+
+The donut chart is a different version of the hated pie chart.
+
+![](https://datavizcatalogue.com/methods/images/top_images/donut_chart.png)
+Example from ["The Data Visualisation Catalogue."](https://datavizcatalogue.com/methods/donut_chart.html)
+
+The donut chart we'll be making today is at the top of this page, with code to create it at the bottom.
+
+## Data
+
+To show how a donut chart is useful, we'll be looking at data gathered from Texas Justice Initiative which, in their own words, "publishes and provides oversight for criminal justice data throughout Texas". The data can be found [here](https://texasjusticeinitiative.org/data).
+
+## Representation Description
+
+For this donut chart, we'll be showing a breakdown of total deaths in custody in Texas since 2005 broken down by race. The goal is to easily compare each race to another and see how they comprise total deaths. For donut charts, the important encoder is the length of the arcs making up the donut. Each donut slice's size corresponds to percentages. Additionally, each group will be encoded by color with a legend to detail which color represents which group. The empty space inside the "donut" will be used to annotate the chart with additional useful information.
+
+## How to read it and what to look for
+
+Look to the center of the donut chart to see what is being represented here: total deaths in custody. Also in the blank middle space are the percentages for each slice of the donut. On the donut itself, each slice is colored, and the legend to the right tells you how to read each color. The length of each slice of the donut corresponds to the percentage of total deaths for that racial group.
+
+## Presentation tips
+
+Donut charts, and their cousin the pie chart, are best used when showing a few different groups that make up slices of the whole. When you want to quickly show high level group data, consider the donut chart. The space in the middle of the chart should be taken advantage of, either to show the total sum or group percentages.
+
+## Variations and alternatives
+
+The most obvious variation on the donut chart is, as previously mentioned, the pie chart. However, whereas the pie chart focuses the reader on areas of slices, the donut chart focuses them on lengths of slices, a much easier comparison for people to make. Additionally, the donut chart allows you to include information in the middle of the chart, while the pie chart does not. Another alternative is to use a stacked bar graph. ![](https://datavizcatalogue.com/methods/images/anatomy/stacked_bar_graph.png)
+
+Bar charts are simple and elegant, but it can be difficult to compare each segment to the other, as they don't share a baseline. Also, similarly to the donut chart, if there are many segments it becomes harder to read.
+
+## Methods
+
+```{r}
+library(here)
+library(readr)
+library(dplyr)
+library(tidyr)
+library(scales)
+library(ggplot2)
+library(colorblindr)
+```
+
+```{r}
+deaths <- read_csv(here::here("tji_custodialDeaths.csv"))
+```
+
+```{r}
+glimpse(deaths)
+```
+
+```{r}
+deaths_by_race <- deaths %>% 
+  select(race) %>% 
+  count(race) %>% 
+  mutate(race = replace_na(race, "UNKNOWN"))
+  
+```
+
+```{r}
+deaths_by_race$fraction <-  deaths_by_race$n / sum(deaths_by_race$n)
+total_deaths <- paste("Total deaths\nin custody:", sum(deaths_by_race$n))
+deaths_by_race$ymax <-  cumsum(deaths_by_race$fraction)
+deaths_by_race$ymin <-  c(0, head(deaths_by_race$ymax, n =-1))
+deaths_by_race$labelPosition <- (deaths_by_race$ymax + deaths_by_race$ymin) / 2
+deaths_by_race$label <- paste(label_percent()(deaths_by_race$fraction))
+ggplot(deaths_by_race, aes(ymax=ymax, ymin=ymin, xmax=4, xmin=3, fill=race)) +
+  geom_rect() +
+  geom_text(x=2.5, aes(y=labelPosition, label=label), size= 3) +
+  scale_fill_OkabeIto() +
+  coord_polar(theta="y") +
+  xlim(c(-0.5,4)) +
+  theme_void() +
+  annotate(geom = 'text', x = -0.5, y = 0.5, label = total_deaths, size = 6) +
+  labs(fill = "Race") +
+  ggtitle("Deaths in custody in Texas since 2005") +
+  theme(plot.title = element_text(hjust = 0.5))
+```
+

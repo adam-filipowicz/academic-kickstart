@@ -1,0 +1,7 @@
+"0","affil.plot +"
+"0","  hot_diggity +"
+"0","  scale_x_continuous(expand = c(0,0),"
+"0","                     breaks = hd.years$year,"
+"0","                     labels = hd.years$year_lab)"
+"2","Scale for 'x' is already present. Adding another scale for 'x', which will replace the existing scale.
+"

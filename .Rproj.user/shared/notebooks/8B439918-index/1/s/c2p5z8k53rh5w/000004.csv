@@ -1,0 +1,4 @@
+"0","my_colors <- c(""skyblue3"", ""midnightblue"", ""darkolivegreen4"")"
+"0","sound_outlines +"
+"0","  scale_fill_manual(values = my_colors) +"
+"0","  scale_color_manual(values = my_colors)"

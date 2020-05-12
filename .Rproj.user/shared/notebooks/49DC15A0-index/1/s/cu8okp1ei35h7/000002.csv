@@ -1,0 +1,22 @@
+"0","library(dplyr)"
+"0","moma <- read_csv(here::here(""artworks-cleaned.csv""))"
+"2","Parsed with column specification:
+cols(
+  .default = col_double(),
+  title = [31mcol_character()[39m,
+  artist = [31mcol_character()[39m,
+  artist_bio = [31mcol_character()[39m,
+  artist_gender = [31mcol_character()[39m,
+  circumference_cm = [33mcol_logical()[39m,
+  diameter_cm = [33mcol_logical()[39m,
+  length_cm = [33mcol_logical()[39m,
+  seat_height_cm = [33mcol_logical()[39m,
+  purchase = [33mcol_logical()[39m,
+  gift = [33mcol_logical()[39m,
+  exchange = [33mcol_logical()[39m,
+  classification = [31mcol_character()[39m,
+  department = [31mcol_character()[39m
+)
+"
+"2","See spec(...) for full column specifications.
+"

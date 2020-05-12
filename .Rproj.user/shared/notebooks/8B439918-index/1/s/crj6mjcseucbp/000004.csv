@@ -1,0 +1,4 @@
+"0","ggplot(sounds, aes(x = age, y = prop_produce, color = sound)) +"
+"0","  geom_line() +"
+"0","  geom_point() +"
+"0","  labs(x = ""Age (months)"", y = ""Proportion of Children Producing"")"

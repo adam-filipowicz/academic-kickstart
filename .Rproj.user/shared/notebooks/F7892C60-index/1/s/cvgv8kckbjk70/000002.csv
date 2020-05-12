@@ -1,0 +1,5 @@
+"0","demo_plt <- ggplot(iris, aes(Sepal.Length, Sepal.Width, color=Species)) + "
+"0","  geom_point(size=3) +"
+"0","  scale_color_discrete(labels=c(""Setosa"", ""Versicolor"", ""Virginica"")) + "
+"0","  labs(x=""Sepal Length (cm)"", y=""Sepal Width (cm)"", title=""Fisher's Irises"") "
+"0","demo_plt"

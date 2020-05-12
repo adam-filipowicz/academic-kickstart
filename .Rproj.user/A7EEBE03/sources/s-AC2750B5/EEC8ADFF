@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1589239524934.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "EEC8ADFF",
+    "lastKnownWriteTime" : 1589239815,
+    "last_content_update" : 1589239815641,
+    "path" : "~/GitHub/academic-kickstart/content/authors/admin/_index.md",
+    "project_path" : "content/authors/admin/_index.md",
+    "properties" : {
+        "cursorPosition" : "65,13",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "markdown"
+}

@@ -1,0 +1,6 @@
+"0","total_subscribers <- broadband_tidy %>% "
+"0","  count(year, wt = `Fixed broadband Internet subscribers (per 100 people)`)"
+"0","ggplot(total_subscribers, aes(year, n)) +"
+"0","  geom_point() +"
+"0","  labs(x = ""Year"", y = ""Fixed broadband Internet \nsubscribers (per 100 people)"") +"
+"0","  theme_bw()"

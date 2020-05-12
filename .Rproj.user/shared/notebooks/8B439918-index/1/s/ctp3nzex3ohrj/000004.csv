@@ -1,0 +1,4 @@
+"0","sounds %>% "
+"0","  group_by(age) %>% "
+"0","  summarize(total_respond = sum(kids_respond)) %>% "
+"0","  knitr::kable()"

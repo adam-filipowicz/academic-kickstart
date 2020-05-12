@@ -1,0 +1,3 @@
+"0","ggplot(sounds, aes(x = sound, y = kids_produce)) +"
+"0","  geom_col() +"
+"0","  labs(x = ""Sound"", y = ""Total Children Producing"")"

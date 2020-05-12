@@ -1,0 +1,6 @@
+"0","med_age <- sounds %>% "
+"0","  summarise(mos = median(age)) %>% "
+"0","  pull()"
+"0","sound_by_age +"
+"0","  scale_color_gradient2(midpoint = med_age,"
+"0","                        low = ""blue"", mid = ""white"", high = ""red"")"

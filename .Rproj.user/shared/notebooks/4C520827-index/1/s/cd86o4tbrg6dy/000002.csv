@@ -1,0 +1,6 @@
+"0","nathan_w_females <- nathan_ann +"
+"0","  # add in the female data, and manually set a fill color"
+"0","  geom_col(data = hdm_females, "
+"0","           width = 0.75, "
+"0","           fill = ""#F68A39"")"
+"0","nathan_w_females"

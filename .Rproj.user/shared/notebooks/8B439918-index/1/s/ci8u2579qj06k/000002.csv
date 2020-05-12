@@ -1,0 +1,2 @@
+"0","incarceration_county <- incarceration %>% filter(year == ""2014"") %>% select(fips, total_prison_pop_rate) %>% rename(county_fips = fips)"
+"0","incarceration_county <- left_join(incarceration_county, counties, by = ""county_fips"")"

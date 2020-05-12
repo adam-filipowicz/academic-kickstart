@@ -20,7 +20,7 @@ date_format = "Jan 2006"
 [[experience]]
   title = "Graduate Student"
   company = "Aballay Lab, OHSU"
-  company_url = ""
+  company_url = "https://www.ohsu.edu/school-of-medicine/aballay-lab"
   location = "Oregon"
   date_start = "2018-04-01"
   date_end = ""

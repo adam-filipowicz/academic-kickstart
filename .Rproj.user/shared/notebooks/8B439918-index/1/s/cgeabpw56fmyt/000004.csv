@@ -1,0 +1,3 @@
+"0","hex_colors <- c(""#a6cee3"", ""#1f78b4"", ""#b2df8a"")"
+"0","sound_traj +"
+"0","  scale_color_manual(values = hex_colors)"

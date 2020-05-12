@@ -1,0 +1,23 @@
+"0","mean_departure_times <- departure_times %>% "
+"0","  group_by(month, name, origin) %>% "
+"0","  summarise(mean_delay=mean(dep_delay, na.rm = TRUE))"
+"0","glimpse(mean_departure_times)"
+"1","Rows: 264"
+"1",""
+"1","
+"
+"1","Columns: 4"
+"1",""
+"1","
+"
+"1","Groups: month, name [132]"
+"1",""
+"1","
+"
+"1","$ month      [3m[38;5;246m<int>[39m[23m 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, ...
+$ name       [3m[38;5;246m<fct>[39m[23m Alaska Airlines Inc., Alaska Airlines Inc., American Airlines Inc., American Airlines Inc., Delta A...
+$ origin     [3m[38;5;246m<chr>[39m[23m ""PDX"", ""SEA"", ""PDX"", ""SEA"", ""PDX"", ""SEA"", ""PDX"", ""SEA"", ""PDX"", ""SEA"", ""PDX"", ""SEA"", ""PDX"", ""SEA"", ""...
+$ mean_delay [3m[38;5;246m<dbl>[39m[23m -1.1844181, 1.8599126, 8.3715847, 13.2831169, 4.0512129, 10.4760522, 21.1000000, 22.5784314, -2.451..."
+"1",""
+"1","
+"

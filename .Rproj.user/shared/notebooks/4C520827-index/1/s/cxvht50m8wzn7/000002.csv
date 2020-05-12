@@ -1,0 +1,16 @@
+"0","glimpse(hot.dogs)"
+"1","Rows: 49"
+"1",""
+"1","
+"
+"1","Columns: 4"
+"1",""
+"1","
+"
+"1","$ year      [3m[38;5;246m<dbl>[39m[23m 2017, 2017, 2016, 2016, 2015, 2015, 2014, 2014, 2013, 2013, 2012, 2012, 2011, 2011, 2010, 2009, 2008...
+$ gender    [3m[38;5;246m<fct>[39m[23m male, female, male, female, male, female, male, female, male, female, male, female, male, female, ma...
+$ name      [3m[38;5;246m<chr>[39m[23m ""Joey Chestnut"", ""Miki Sudo"", ""Joey Chestnut"", ""Miki Sudo"", ""Matthew Stonie"", ""Miki Sudo"", ""Joey Che...
+$ num_eaten [3m[38;5;246m<dbl>[39m[23m 72.000, 41.000, 70.000, 38.000, 62.000, 38.000, 61.000, 34.000, 69.000, 36.750, 68.000, 45.000, 62.0..."
+"1",""
+"1","
+"

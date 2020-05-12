@@ -1,0 +1,4 @@
+"0","hot.dogs <- hot.dogs %>% "
+"0","  mutate(post_ifoce = year >= 1997) %>% "
+"0","  filter(year >= 1981 & gender == ""male"")"
+"0","hot.dogs"

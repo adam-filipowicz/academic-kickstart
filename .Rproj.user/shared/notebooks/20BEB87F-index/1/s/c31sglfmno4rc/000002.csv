@@ -1,0 +1,2 @@
+"0","broadband <- readxl::read_excel(""gapminder_broadband_per_100.xlsx"")"
+"0","janitor::clean_names(broadband)"
