@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1589587096544.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1403756649",
+    "id" : "4EC02108",
+    "lastKnownWriteTime" : 1589587241,
+    "last_content_update" : 1589587241616,
+    "path" : "~/GitHub/academic-kickstart/content/project/2020-05-15-covid-19-app/index.md",
+    "project_path" : "content/project/2020-05-15-covid-19-app/index.md",
+    "properties" : {
+        "cursorPosition" : "17,14",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "markdown"
+}
