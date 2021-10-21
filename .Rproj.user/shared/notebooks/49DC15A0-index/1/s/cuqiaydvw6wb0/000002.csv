@@ -1,5 +1,0 @@
-"0","ggplot(moma, aes(year_created, year_acquired)) + "
-"0","  geom_point(alpha = .1, na.rm = TRUE) +"
-"0","  geom_abline(intercept = c(0,0), colour = ""red"") +"
-"0","  labs(x = ""Year Painted"", y = ""Year Acquired"") +"
-"0","  ggtitle(""MoMA Keeps Its Collection Current"")"

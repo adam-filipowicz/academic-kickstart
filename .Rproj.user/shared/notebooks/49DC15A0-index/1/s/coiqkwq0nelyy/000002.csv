@@ -1,4 +1,0 @@
-"0","moma %>% "
-"0","  filter (num_artists == 1 & n_female_artists == 1) %>%"
-"0","  select(title, artist, year_acquired, year_created) %>% "
-"0","  arrange(year_acquired)"

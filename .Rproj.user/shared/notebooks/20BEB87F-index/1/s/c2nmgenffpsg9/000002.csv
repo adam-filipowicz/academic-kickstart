@@ -1,3 +1,0 @@
-"0","ggplot(gapminder_recent, aes(x = lifeExp, y = gdpPercap, color = continent)) +"
-"0","  geom_point() +"
-"0","  scale_color_brewer(palette = ""Dark2"")"

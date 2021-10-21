@@ -1,5 +1,0 @@
-"0","sound_outlines <- ggplot(sounds, aes(x = age, y = prop_produce, fill = fct_reorder2(sound, age, prop_produce))) +"
-"0","  geom_smooth(aes(color = fct_reorder2(sound, age, prop_produce)), se = FALSE, lwd = .5, show.legend = FALSE) +"
-"0","  geom_point(shape = 21) +"
-"0","  labs(x = ""Age (months)"", y = ""Proportion of Children Producing"", fill = ""sound"")"
-"0","sound_outlines"

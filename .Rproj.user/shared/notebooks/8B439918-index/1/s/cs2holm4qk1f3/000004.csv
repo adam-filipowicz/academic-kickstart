@@ -1,4 +1,0 @@
-"0","ggplot(sounds, aes(x = age, y = prop_produce)) +"
-"0","  geom_col() +"
-"0","  labs(x = ""Age (mos)"", y = ""Proportion of Children Producing"") + "
-"0","  facet_wrap(~sound)"

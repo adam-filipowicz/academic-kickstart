@@ -1,3 +1,0 @@
-"0","ggplot(sounds, aes(x = age, y = kids_respond)) +"
-"0","  geom_col() +"
-"0","  labs(x = ""Age (mos)"", y = ""Total Children"")"

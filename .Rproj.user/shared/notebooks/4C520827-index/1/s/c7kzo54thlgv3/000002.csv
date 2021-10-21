@@ -1,6 +1,0 @@
-"0","ggplot(hot.dogs, aes(x = year, y = num_eaten)) +"
-"0","  geom_col(aes(fill = post_ifoce), color = ""white"") +"
-"0","  labs(x = ""Year"", y = ""Hot Dogs and Buns Consumed"") +"
-"0","  ggtitle(""Nathan's Hot Dog Eating Contest Results, 1981-2017"") +"
-"0","  scale_fill_discrete(name = """","
-"0","                      labels=c(""Pre-IFOCE"", ""Post-IFOCE""))"

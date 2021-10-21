@@ -1,5 +1,0 @@
-"0","broadband_tidy <- broadband %>%"
-"0","  rename(country = `Fixed broadband Internet subscribers (per 100 people)`) %>% "
-"0","  gather(year, `Fixed broadband Internet subscribers (per 100 people)`, -country, na.rm = TRUE) %>% "
-"0","  arrange(country)"
-"0","broadband_tidy"

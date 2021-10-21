@@ -1,7 +1,0 @@
-"0","affil.plot <- ggplot(hdm.affil, aes(x = year, y = num_eaten)) +"
-"0","  geom_col(aes(fill = affiliated)) +"
-"0","  labs(x = ""Year"", y = ""Hot Dogs and Buns Consumed"") +"
-"0","  ggtitle(""Nathan's Hot Dog Eating Contest Results, 1981-2017"") +"
-"0","  scale_fill_manual(values = c('#E9602B','#2277A0','#CCB683'),"
-"0","                    name = ""IFOCE-affiliation"")"
-"0","affil.plot"

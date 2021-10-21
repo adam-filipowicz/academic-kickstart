@@ -1,8 +1,0 @@
-"0","sound_by_age <- ggplot(sounds, aes(x = age, "
-"0","                                   y = prop_produce, "
-"0","                                   color = age)) +"
-"0","  geom_line(aes(group = sound), lwd = .5) +"
-"0","  geom_point(size = 2) +"
-"0","  labs(x = ""Age (months)"", "
-"0","       y = ""Proportion of Children Producing"")"
-"0","sound_by_age"

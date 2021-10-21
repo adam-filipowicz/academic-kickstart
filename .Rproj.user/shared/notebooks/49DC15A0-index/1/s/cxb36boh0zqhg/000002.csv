@@ -1,3 +1,0 @@
-"0","moma %>% "
-"0","  select(artist, title, year_created) %>% "
-"0","  arrange(year_created)"

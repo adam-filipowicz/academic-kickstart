@@ -1,5 +1,0 @@
-"0","gapminder_recent <- gapminder %>% "
-"0","  filter(year == 2007) %>% "
-"0","  select(country, continent, lifeExp, gdpPercap)"
-"0","gapminder_recent %>% "
-"0","  arrange(lifeExp)"

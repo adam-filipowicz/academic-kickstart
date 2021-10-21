@@ -1,8 +1,0 @@
-"0","library(forcats)"
-"0","moma_solo_relevel <- moma_solo %>% "
-"0","  mutate(artist_gender = fct_relevel(artist_gender, ""Male"", ""Female""))"
-"0",""
-"0","mu <- moma_solo_relevel %>% "
-"0","  group_by(artist_gender) %>%  "
-"0","  summarize(grp.mean=mean(year_acquired, na.rm = TRUE))"
-"0","head(mu)"

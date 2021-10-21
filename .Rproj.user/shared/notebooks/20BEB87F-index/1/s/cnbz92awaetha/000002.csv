@@ -1,4 +1,0 @@
-"0","ggplot(gapminder, aes(x = continent, y = gdpPercap)) +"
-"0","  stat_summary(fun = ""max"", geom = ""point"") +"
-"0","  stat_summary(fun = ""min"", geom = ""point"", shape = 21) +"
-"0","  labs(x = """", y = ""GDP Per Capita"")"
