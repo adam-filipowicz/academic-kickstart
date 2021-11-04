@@ -5,7 +5,7 @@ date: '2021-04-22'
 slug: spark-to-screen
 categories: []
 tags: ["Podcast"]
-summary: 'A podcast about how to transform your spark of passion for film, acting, or comedy into successfully creating work your friends, family, or millions can watch on screen, featuring interviews with people in the entertainment industry.'
+summary: 'A podcast I produce and co-host about how to transform your spark of passion for film, acting, or comedy into successfully creating work your friends, family, or millions can watch on screen, featuring interviews with people in the entertainment industry.'
 authors: [Adam Filipowicz]
 external_link: 'https://anchor.fm/emma-bridges0'
 image:
