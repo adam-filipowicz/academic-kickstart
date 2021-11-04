@@ -24,6 +24,14 @@ subtitle = ""
    [[content.filter_button]]
      name = "All"
      tag = "*"
+     
+   [[content.filter_button]]
+     name = "Video"
+     tag = "Video"     
+     
+   [[content.filter_button]]
+     name = "Podcast"
+     tag = "Podcast"
   
    [[content.filter_button]]
      name = "Web App"

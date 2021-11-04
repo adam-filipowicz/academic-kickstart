@@ -3,7 +3,7 @@
     "path": "~/GitHub/academic-kickstart/content/authors/admin/_index.md",
     "project_path": "content/authors/admin/_index.md",
     "type": "markdown",
-    "hash": "1036563286",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1634845912878.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "72,93",
+        "cursorPosition": "72,410",
         "scrollLine": "55"
     },
     "folds": "",
-    "lastKnownWriteTime": 1634845982,
+    "lastKnownWriteTime": 1636045077,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1634845982652,
+    "last_content_update": 1636045077563,
     "read_only": false,
     "read_only_alternatives": []
 }
