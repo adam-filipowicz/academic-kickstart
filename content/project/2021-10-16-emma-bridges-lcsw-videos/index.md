@@ -5,7 +5,7 @@ date: '2021-10-16'
 slug: spark-to-screen
 categories: []
 tags: ["Video"]
-summary: 'Videos created for a mental health therapist's website.'
+summary: 'Short videos created for a mental health therapist's website.'
 authors: [Adam Filipowicz]
 external_link: 'https://www.youtube.com/channel/UCmtl5IXLQS3rcmTtJwGdKvQ'
 image:
